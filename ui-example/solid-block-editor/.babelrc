@@ -1,0 +1,14 @@
+{
+    "presets": [
+        "babel-preset-solid",
+        // "@babel/transform-typescript",
+        "@babel/typescript",
+        "jest",
+        [
+            "@babel/env",
+            {
+                "modules": false
+            }
+        ]
+    ]
+}

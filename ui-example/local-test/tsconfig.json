@@ -1,0 +1,24 @@
+{
+    "ts-node": {
+        "compilerOptions": {
+            "module": "commonjs"
+        }
+    },
+    "compilerOptions": {
+        "strict": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
+        "declaration": true,
+        "types": ["vite/client", "jest"],
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "importHelpers": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}

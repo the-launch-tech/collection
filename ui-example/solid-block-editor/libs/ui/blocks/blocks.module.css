@@ -1,0 +1,22 @@
+.blockStatic {
+    outline: 1px dashed rgba(170, 170, 170, 0.7);
+    outline-offset: -2px;
+    border: solid 1px transparent;
+    cursor: default;
+}
+
+.blockHovered {
+    border: 1px solid #79b3e2da;
+}
+
+.blockSelected {
+    outline: 2px solid #3b97e3 !important;
+}
+
+.blockRichTextSelected {
+    outline: 2px solid #c53e3e !important;
+}
+
+.blockDragActive {
+    opacity: 0;
+}

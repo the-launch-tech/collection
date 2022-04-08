@@ -1,0 +1,41 @@
+.tooltipWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #b0d1b0;
+    border-radius: 8px;
+    z-index: 500;
+}
+
+.tooltipWrapperActive {
+    display: block;
+}
+
+.tooltipList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.1rem 0.4rem;
+}
+
+.tooltipOption {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltipIcon {
+    font-weight: 600;
+    border-radius: 4px;
+    border: solid 2px #288101;
+    color: green;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

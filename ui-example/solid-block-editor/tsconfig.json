@@ -1,0 +1,25 @@
+{
+    "ts-node": {
+        "compilerOptions": {
+            "module": "commonjs"
+        }
+    },
+    "compilerOptions": {
+        "strict": true,
+        "target": "ES5",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
+        "declaration": true,
+        "types": ["jest"],
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "importHelpers": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true
+    }
+}

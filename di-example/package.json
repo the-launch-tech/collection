@@ -1,0 +1,33 @@
+{
+    "name": "solid-ssr-vite-express-inversify-template",
+    "version": "1.0.0",
+    "description": "Template for SolidJS SSR with Vite, and Express Inversify Server",
+    "scripts": {
+        "dev:build:server": "npm --prefix ./server run dev:build",
+        "dev:start:server": "npm --prefix ./server run dev:start",
+        "dev:start:client": "npm --prefix ./client run dev:start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/the-launch-tech/solid-ssr-express-inversify-template.git"
+    },
+    "keywords": [
+        "Solid",
+        "SolidJS",
+        "Vite",
+        "Typescript",
+        "Jest",
+        "Prettier",
+        "VSCode",
+        "ESLint",
+        "Express",
+        "Node",
+        "Inversify"
+    ],
+    "author": "Daniel Griffiths",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/the-launch-tech/solid-ssr-express-inversify-template/issues"
+    },
+    "homepage": "https://github.com/the-launch-tech/solid-ssr-express-inversify-template#readme"
+}
