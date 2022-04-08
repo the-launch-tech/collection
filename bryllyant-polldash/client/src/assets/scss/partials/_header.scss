@@ -1,0 +1,91 @@
+.header {
+  height: 60px;
+  background-color: $bgInverse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+
+  .nav {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+
+      .menu-item-logo {
+        margin-right: 2rem;
+        height: 50px;
+        width: 50px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .menu-item {
+        position: relative;
+        margin: 0 0.5rem;
+
+        .menu-item-anchor,
+        .menu-item-label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 1rem;
+          height: 60px;
+          color: $textInverse;
+          text-decoration: none;
+          border-bottom: solid 3px $textInverse;
+          transition: 0.2s;
+          @include icon-spacing(0.5rem);
+
+          &:hover {
+            color: $highlight;
+            border-bottom: solid 3px $highlight;
+            background-color: $bgInverse;
+          }
+
+          &:active {
+            color: transparentize($highlight, 0.4);
+            border-bottom: solid 3px transparentize($highlight, 0.4);
+            background-color: $bgInverse;
+          }
+
+          &.nav-active {
+            color: $highlight;
+            border-bottom: solid 3px $highlight;
+            background-color: $bgInverse;
+
+            &:hover {
+              color: transparentize($highlight, 0.3);
+              border-bottom: solid 3px transparentize($highlight, 0.3);
+              background-color: $bgInverse;
+            }
+
+            &:active {
+              color: transparentize($highlight, 0.4);
+              border-bottom: solid 3px transparentize($highlight, 0.4);
+              background-color: $bgInverse;
+            }
+          }
+        }
+      }
+    }
+  }
+}

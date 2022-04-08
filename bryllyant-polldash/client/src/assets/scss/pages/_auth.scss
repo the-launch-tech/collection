@@ -1,0 +1,56 @@
+.auth {
+  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
+
+  .auth-sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: $bgInverseDark;
+    position: relative;
+    z-index: 500;
+
+    &.mobile-nav {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      transform: translateX(-100%);
+      transition: 0.3s;
+
+      &.toggled-nav {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .auth-content {
+    width: calc(100% - 200px);
+    height: 100%;
+    padding-bottom: 10rem;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    header {
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+      background-color: transparentize($highlight, 0.9);
+      text-transform: uppercase;
+      color: $textNormal;
+    }
+
+    .dashboard {
+      .dashboard-title {
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .summary {
+        .dashboard-paragraph {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.footer {
+  height: 40px;
+  width: 100%;
+  background-color: $bgInverseDark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+
+  .footer-container {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .site-text {
+      text-align: center;
+      font-size: 0.7rem;
+      color: $textInverseMuted;
+    }
+  }
+}

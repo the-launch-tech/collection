@@ -1,0 +1,329 @@
+.form-container {
+  form {
+    .form-head {
+      .form-title {
+      }
+    }
+
+    .form-meta {
+      .form-page-sub-header {
+        .form-page-sub-title {
+        }
+
+        .form-page-sub-description {
+        }
+      }
+
+      .form-page-tracker {
+        .form-page-counter {
+          color: $primary;
+          background-color: $bgSecondary;
+
+          &:hover {
+            color: transparentize($primary, 0.5);
+            background-color: $bgTertiary;
+          }
+
+          &:active {
+            color: transparentize($primary, 0.75);
+            background-color: $bgPrimary;
+          }
+
+          &:disabled {
+            color: $bgPrimary;
+            background-color: $bgSecondary;
+            cursor: not-allowed;
+
+            &:hover {
+              color: $bgPrimary;
+              background-color: $bgSecondary;
+            }
+
+            &:active {
+              color: $bgPrimary;
+              background-color: $bgSecondary;
+            }
+          }
+
+          &.active-page-counter {
+            color: $highlight;
+            cursor: default;
+
+            &:hover {
+              background-color: $bgSecondary;
+            }
+
+            &:active {
+              background-color: $bgSecondary;
+            }
+          }
+
+          &.incomplete-page-counter {
+            color: $highlight;
+
+            &:hover {
+              color: transparentize($highlight, 0.5);
+              background-color: $bgTertiary;
+            }
+
+            &:active {
+              color: transparentize($highlight, 0.75);
+              background-color: $bgPrimary;
+            }
+          }
+
+          .form-page-counter-icon {
+            color: inherit;
+          }
+        }
+      }
+    }
+    .form-row {
+      &.form-action-row {
+      }
+
+      .form-cell {
+        &.form-action-cell-end {
+        }
+
+        &.form-action-cell-start {
+        }
+
+        .form-field {
+          .form-field-label {
+            color: $textNormal;
+
+            .form-required-note {
+              color: $warning;
+            }
+          }
+
+          .form-field-input,
+          .form-field-select,
+          .form-field-textarea {
+            color: $textNormal;
+            background-color: $bgPrimary;
+            border-color: $bgTertiary;
+            font-family: $bodyFont;
+
+            &::-webkit-input-placeholder {
+              font-weight: 200;
+              font-family: $bodyFont;
+              color: $textMuted;
+            }
+
+            &::-moz-placeholder {
+              font-weight: 200;
+              font-family: $bodyFont;
+              color: $textMuted;
+            }
+
+            &:-ms-input-placeholder {
+              font-weight: 200;
+              font-family: $bodyFont;
+              color: $textMuted;
+            }
+
+            &:-moz-placeholder {
+              font-weight: 200;
+              font-family: $bodyFont;
+              color: $textMuted;
+            }
+
+            &:hover {
+              background-color: $bgSecondary;
+            }
+
+            &:focus {
+              background-color: $bgPrimary;
+              border-color: $bgSecondary;
+            }
+
+            &:-internal-autofill-selected {
+              color: $textNormal !important;
+              background-color: $bgSecondary !important;
+
+              &:hover {
+                background-color: $bgSecondary !important;
+              }
+
+              &:focus {
+                background-color: $bgPrimary !important;
+                border-color: $bgSecondary !important;
+              }
+            }
+          }
+
+          .form-field-input-wrapper {
+            .form-prefix-icon {
+              font-weight: 400;
+              color: $highlight;
+
+              &.form-prefix-errored {
+                color: $warning;
+              }
+
+              &.form-prefix-success {
+                color: $highlight;
+              }
+            }
+
+            .form-show-password-icon {
+              &.active-show-password {
+                color: $highlight;
+              }
+            }
+          }
+
+          .form-field-error {
+            color: $warning;
+          }
+
+          .form-repeater-group {
+            .form-row {
+              .form-repeater-remove {
+                border-color: $warning;
+                background-color: $bgPrimary;
+                color: $warning;
+
+                &:hover {
+                  border-color: transparentize($warning, 0.5);
+                  background-color: transparentize($warning, 0.75);
+                  color: $textNormal;
+                }
+
+                &:active {
+                  border-color: transparentize($warning, 0.5);
+                  background-color: transparentize($warning, 0.5);
+                  color: $textNormal;
+                }
+
+                i {
+                  color: inherit;
+                }
+              }
+
+              .form-repeater-insert {
+                border-color: $primary;
+                background-color: $bgPrimary;
+                color: $primary;
+
+                &:hover {
+                  border-color: transparentize($primary, 0.5);
+                  background-color: transparentize($primary, 0.75);
+                  color: $textNormal;
+                }
+
+                &:active {
+                  border-color: transparentize($primary, 0.5);
+                  background-color: transparentize($primary, 0.5);
+                  color: $textNormal;
+                }
+
+                i {
+                  color: inherit;
+                }
+              }
+            }
+
+            .form-repeater-push {
+              background-color: $bgPrimary;
+              border-color: $highlight;
+              color: $highlight;
+
+              &:hover {
+                background-color: transparentize($highlight, 0.75);
+                border-color: transparentize($highlight, 0.75);
+                color: $textNormal;
+              }
+
+              &:active {
+                background-color: transparentize($highlight, 0.5);
+                border-color: transparentize($highlight, 0.5);
+                color: $textNormal;
+              }
+
+              i {
+                color: inherit;
+              }
+            }
+          }
+        }
+
+        .form-next,
+        .form-submit {
+          color: $primary;
+          border-color: $primary;
+          background-color: $bgPrimary;
+
+          i {
+            color: inherit;
+          }
+
+          &:hover {
+            color: transparentize($primary, 0.5);
+            border-color: transparentize($primary, 0.5);
+            background-color: $bgPrimary;
+          }
+
+          &:active {
+            color: transparentize($primary, 0.75);
+            border-color: transparentize($primary, 0.75);
+            background-color: $bgPrimary;
+          }
+
+          &:disabled {
+            cursor: not-allowed;
+            color: $bgTertiary;
+            border-color: $bgTertiary;
+            background-color: $bgPrimary;
+          }
+        }
+
+        .form-previous {
+          color: $highlight;
+          border-color: $highlight;
+          background-color: $bgPrimary;
+
+          &:hover {
+            color: transparentize($highlight, 0.5);
+            border-color: transparentize($highlight, 0.5);
+            background-color: $bgPrimary;
+          }
+
+          &:active {
+            color: transparentize($highlight, 0.75);
+            border-color: transparentize($highlight, 0.75);
+            background-color: $bgPrimary;
+          }
+
+          i {
+            color: inherit;
+          }
+        }
+
+        .form-cancel {
+          color: $warning;
+          border-color: $warning;
+          background-color: $bgPrimary;
+
+          &:hover {
+            color: transparentize($warning, 0.5);
+            border-color: transparentize($warning, 0.5);
+            background-color: $bgSecondary;
+          }
+
+          &:active {
+            color: transparentize($warning, 0.75);
+            border-color: transparentize($warning, 0.75);
+            background-color: $bgPrimary;
+          }
+
+          i {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}

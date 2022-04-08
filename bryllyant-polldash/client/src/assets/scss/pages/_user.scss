@@ -1,0 +1,19 @@
+.user {
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  padding-top: 5rem;
+
+  @media (max-width: 991px) {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 3rem;
+  }
+
+  @media (max-width: 599px) {
+    padding-top: 2rem;
+  }
+}

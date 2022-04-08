@@ -1,0 +1,16 @@
+.home {
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+
+  .home-title {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .home-big-buttons {
+    .home-big-button {
+      margin: 0 1rem;
+      width: 100%;
+    }
+  }
+}

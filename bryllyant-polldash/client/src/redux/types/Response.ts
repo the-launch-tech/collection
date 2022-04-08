@@ -1,0 +1,5 @@
+export const UPDATE: string = 'RESPONSE.UPDATE'
+export const STORE_AUTH: string = 'RESPONSE.STORE_AUTH'
+export const STORE_USER: string = 'RESPONSE.STORE_USER'
+export const STORE_ACTIVE: string = 'RESPONSE.STORE_ACTIVE'
+export const STORE_RECEIVED: string = 'RESPONSE.STORE_RECEIVED'
